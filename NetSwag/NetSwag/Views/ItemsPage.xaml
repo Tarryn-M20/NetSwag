@@ -5,8 +5,7 @@
              Title="{Binding Title}"
              xmlns:local="clr-namespace:NetSwag.ViewModels"  
              xmlns:model="clr-namespace:NetSwag.Models"  
-             x:Name="BrowseItemsPage"
-             BackgroundImageSource="netrobot.png">
+             x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />

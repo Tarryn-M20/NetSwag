@@ -16,13 +16,10 @@
             <CarouselView Grid.Row="0" HeightRequest="400">
                 <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                        <OnPlatform></OnPlatform>
-
-                        <Button>
-                            <x:String>aspnet.jpg</x:String
-                        </Button>     
-             <!--      <Label Text="Black T-Shirt for ASP.NET"/> -->
-                        <x:String>asptee.jpg</x:String>
+             
+                   <x:String>aspnet.jpg</x:String>
+         <!--      <Label Text="Black T-Shirt for ASP.NET"/> -->   
+                    <x:String>asptee.jpg</x:String>
                     <x:String>blackwhite.jpg</x:String>
                     <x:String>code.jpg</x:String>
                     <x:String>coding.jpeg</x:String>
@@ -57,8 +54,17 @@
 
         </CarouselView>
       </Grid>
-        <Button Text="ORDER NOW" Margin="0,10,0,0"></Button>
+
+        <!--    <Button Clicked="OnButtonClicked" Text="Order Now" Margin=" 10" BackgroundColor="Purple" CornerRadius="6" >
+            
+        </Button> -->
+        
     </StackLayout>
+    
+    
+    
+
+    
   <!--  <ContentPage.BindingContext>
         <vm:AboutViewModel />
     </ContentPage.BindingContext>

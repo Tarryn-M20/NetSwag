@@ -5,8 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="NetSwag.Views.LoginPage"
-             Shell.NavBarIsVisible="False"
-             BackgroundImageSource="netrobot.png">
+             Shell.NavBarIsVisible="False" >
+    <!-- BackgroundImageSource="netrobot.png" -->
+    
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
             <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
