@@ -8,10 +8,29 @@ namespace NetSwag.Views
     public partial class AboutPage : ContentPage
     {
         private readonly object label;
+        private int carouselPosition = 0;
+        private int itemsInCarousel = 0;
+
 
         public AboutPage()
         {
             InitializeComponent();
+
+            var items = TShirtCarouselView.ItemsSource as string[];
+
+
+
+            Device.StartTimer(new TimeSpan(0, 0, 2), () =>
+            {
+
+                TShirtCarouselView.ScrollTo(carouselPosition++);
+
+                if (carouselPosition >= items.Length)
+                    carouselPosition = 0;
+
+
+                return true; 
+            });
         }
 
         private object GetLabel()
@@ -36,7 +55,10 @@ namespace NetSwag.Views
 
         private async void OnButtonClicked(object sender, EventArgs e)
         {
-            
+
+
+
+
         }
 
     }

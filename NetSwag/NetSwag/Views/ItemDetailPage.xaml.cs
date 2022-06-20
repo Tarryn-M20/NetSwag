@@ -11,5 +11,12 @@ namespace NetSwag.Views
             InitializeComponent();
             BindingContext = new ItemDetailViewModel();
         }
+
+        public class ItemDetailViewModel
+        {
+            public string Title { get; set; }
+            public string Description { get; set; }
+
+        }
     }
 }

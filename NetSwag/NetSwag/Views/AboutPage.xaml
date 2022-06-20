@@ -13,7 +13,7 @@
 
         <Grid HorizontalOptions="Center" VerticalOptions="Center" >
 
-            <CarouselView Grid.Row="0" HeightRequest="400">
+            <CarouselView x:Name="TShirtCarouselView" Grid.Row="0" HeightRequest="400">
                 <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
              
@@ -32,7 +32,6 @@
                     <x:String>microsoft.jpeg</x:String>
                     <x:String>netblack.jpg</x:String>
                     <x:String>netcolour.jpg</x:String>
-                    <x:String>netdevelopertshirt.png</x:String>
                     <x:String>nettee.jpg</x:String>
                     <x:String>puzzlenet.jpg</x:String>
                     <x:String>sdtee.jpg</x:String>
@@ -55,10 +54,10 @@
         </CarouselView>
       </Grid>
 
-        <!--    <Button Clicked="OnButtonClicked" Text="Order Now" Margin=" 10" BackgroundColor="Purple" CornerRadius="6" >
-            
-        </Button> -->
-        
+        <Button Clicked="OnButtonClicked" Text="Order Now" Margin=" 10" BackgroundColor="Purple" CornerRadius="6" />
+
+
+
     </StackLayout>
     
     
